@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Challenge</title>
+</head>
+<body>
+
+	<style>
+		/* These styles just apply to the page to arrange the boxes in the center */
+		body, html { height: 100%; }
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.page-wrapper {
+			display: grid;
+			grid-template-columns: repeat(3, 100px);
+			gap: 1rem;
+		}
+	</style>
+
+	<div class="page-wrapper">
+		
+	<!-- ------------------------------------------------------- -->
+	<!-- Challenge 1 draw a dash put the inner div in the center -->
+	<div class="challenge-1">
+		<div></div>
+	</div>
+
+	<style>
+		.challenge-1 {
+			border-style: solid;
+            position: relative;
+	        border-width: 1px;
+            height: 100px;
+		}
+
+		.challenge-1 > div {
+            width: 60px;
+            height: 20px;
+            background-color: black;
+            position: absolute;
+            left: 20px;
+            top: 40px;
+		}
+
+	</style>
+<!-- ------------------------------------------------------- -->
+
+<!-- Challenge 2 draw an = with two divs -->
+
+<div class="challenge-2">
+	<div></div>
+	<div></div>
+</div>
+
+<style>
+	.challenge-2 {
+		border-style: solid;
+        position: relative;
+	    border-width: 1px;
+        height: 100px;
+	}
+
+	.challenge-2 > div {
+        width: 60px;
+        height: 20px;
+        background-color: black;
+        position: absolute;
+        left: 20px;
+        top: 25px;
+	}
+
+	.challenge-2 > div:last-child {
+		width: 60px;
+        height: 20px;
+        background-color: black;
+        position: absolute;
+        left: 20px;
+        top: 55px;
+	}
+</style>
+<!-- ------------------------------------------------------- -->
+
+<!-- Challenge 3 draw an X with two divs -->
+
+<div class="challenge-3">
+	<div></div>
+	<div></div>
+</div>
+
+<style>
+	.challenge-3 {
+		border-style: solid;
+        position: relative;
+	    border-width: 1px;
+        height: 100px;
+	}
+
+	.challenge-3 > div {
+        width: 60px;
+        height: 20px;
+        background-color: black;
+        position: absolute;
+        left: 20px;
+        top: 40px;
+	}
+
+	.challenge-3 > div:first-child {
+		width: 60px;
+        height: 15px;
+        background-color: black;
+        position: absolute;
+        left: 20px;
+        top: 45px;
+        transform: rotateY(0deg) rotate(45deg);
+	}
+
+	.challenge-3 > div:last-child {
+		width: 60px;
+        height: 15px;
+        background-color: black;
+        position: absolute;
+        left: 20px;
+        top: 45px;
+        transform: rotateY(0deg) rotate(135deg);
+	}
+</style>
+<!-- ------------------------------------------------------- -->
+
+ <!-- Challenge 4 draw a circle with an X  -->
+
+<div class="challenge-4">
+	<div></div>
+	<div></div>
+	<div></div>
+</div>
+
+<style>
+	.challenge-4 {
+		border-style: solid;
+        position: relative;
+	    border-width: 1px;
+        height: 100px;
+	}
+
+	.challenge-4 > div {
+		width: 40px;
+        height: 10px;
+        position: absolute;
+        left: 30px;
+        top: 45px;
+	}
+
+	.challenge-4 > div:nth-child(1) {
+		width: 60px;
+        height: 60px;
+        border-color: black;
+        border-radius: 50%;
+		border-style: solid;
+        border-width: 10px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+	}
+
+	.challenge-4 > div:nth-child(2) {
+		width: 40px;
+        height: 10px;
+        background-color: black;
+        position: absolute;
+        left: 30px;
+        top: 45px;
+		transform: rotate(135deg);
+	}
+
+	.challenge-4 > div:nth-child(3) {
+		width: 40px;
+        height: 10px;
+        background-color: black;
+        position: absolute;
+        left: 30px;
+        top: 45px;
+        transform: rotate(45deg);
+	}
+	
+</style>
+<!-- ------------------------------------------------------- -->
+
+<!-- Challenge 5 draw a check mark -->
+
+<div class="challenge-5">
+	<div></div>
+	<div></div>
+</div>
+
+<style>
+	.challenge-5 {
+		border-style: solid;
+        position: relative;
+	    border-width: 1px;
+        height: 100px;
+	}
+
+	.challenge-5 > div {
+		width: 30px;
+        height: 12px;
+        background-color: black;
+		border: solid black;
+        position: absolute;
+		transform: rotate(45deg);
+		left: 10px;
+        top: 50px;
+	}
+
+	.challenge-5 > div:last-child {
+		width: 70px;
+        height: 12px;
+        background-color: black;
+		border: solid black;
+        position: absolute;
+		transform: rotate(135deg);
+		left: 20px;
+        top: 40px;
+	}
+</style>
+<!-- ------------------------------------------------------- -->
+
+<!-- Challenge 6 draw a hamburger -->
+<!-- Stretch Challenge: Add lettuce, tomato, and cheese -->
+
+<div class="challenge-6">
+	<div></div>
+	<div></div>
+	<div></div>
+</div>
+
+<style>
+	.challenge-6 {
+		border-style: solid;
+        position: relative;
+	    border-width: 1px;
+        height: 100px;
+	}
+
+	.challenge-6 > div {
+		background-color: tan;
+		width: 60px;
+		height: 25px;
+	}
+
+	.challenge-6 > div:nth-child(1) {
+		border-radius: 20px 20px 0 0;
+		width: 60px;
+		height: 20px;
+		left: 20px;
+		top: 18px;
+		background-color: tan;
+		position: absolute;
+	}
+
+	.challenge-6 > div:nth-child(2) {
+		width: 60px;
+		height: 15px;
+		background-color: maroon;
+		position: absolute;
+		left: 20px;
+		top: 40px;
+	}
+
+	.challenge-6 > div:nth-child(3) {
+		border-radius: 0 0 10px 10px;
+		width: 60px;
+		height: 15px;
+		left: 20px;
+		top: 57px;
+		background-color: tan;
+		position: absolute;
+	}
+</style>
+<!-- ------------------------------------------------------- -->
+
+<!-- Challenge 7 draw the apple switch -->
+
+<div class="challenge-7">
+	<div>
+		<div></div>
+	</div>
+</div>
+
+<style>
+	.challenge-7 {
+		border-style: solid;
+        position: relative;
+	    border-width: 1px;
+        height: 100px;
+	}
+
+	.challenge-7 > div {
+		width: 90px;
+        height: 50px;
+        border-color: black;
+        border-radius: 40%;
+		border-style: solid;
+        border-width: 2px;
+        position: absolute;
+        left: 2px;
+        top: 20px;
+	}
+
+	.challenge-7 > div > div {
+		width: 40px;
+        height: 40px;
+        border-color: black;
+		background-color: black;
+        border-radius: 50%;
+		border-style: solid;
+        border-width: 1px;
+        position: absolute;
+        left: 5px;
+        top: 3px;
+	}
+
+	
+</style>
+<!-- ------------------------------------------------------- -->
+
+<!-- Challenge 8 Draw a smilley face -->
+
+<div class="challenge-8">
+	<div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+</div>
+
+<style>
+	.challenge-8 {
+		border-style: solid;
+        position: relative;
+	    border-width: 1px;
+        height: 100px;
+	}
+
+	.challenge-8 > div {
+		width: 70px;
+        height: 70px;
+        border-color: yellow;
+		background-color: yellow;
+        border-radius: 50%;
+		border-style: solid;
+        border-width: 8px;
+        position: absolute;
+        left: 7px;
+        top: 7px;
+	}
+
+	.challenge-8 > div > div:nth-child(1) {
+		width: 1px;
+        height: 1px;
+        border-color: black;
+		background-color: black;
+        border-radius: 50%;
+		border-style: solid;
+        border-width: 6px;
+        position: absolute;
+        left: 12px;
+        top: 15px;
+	}
+
+	.challenge-8 > div > div:nth-child(2) {
+		width: 1px;
+        height: 1px;
+        border-color: black;
+		background-color: black;
+        border-radius: 50%;
+		border-style: solid;
+        border-width: 6px;
+        position: absolute;
+        left: 46px;
+        top: 15px;
+	}
+
+	.challenge-8 > div > div:nth-child(3) {
+		width: 50px;
+		height: 5px;
+		background-color: black;
+		position: absolute;
+		left: 7px;
+		top: 50px;
+		border: 5px solid black;
+		border-color: black;
+		border-top: 0;
+		border-right: 2px black solid;
+        border-bottom: 1px black solid;
+		border-radius: 7px 7px 50px 50px;
+		transition: .5s;
+		-moz-border-radius: 0 0 120px 120px / 0 0 90px 90px;
+		-webkit-border-radius: 0 0 120px 120px 0 0 90px 90px;
+		border-radius: 0 0 120px 120px / 0 0 90px 90px;
+	}
+	
+</style>
+<!-- ------------------------------------------------------- -->
+
+<!-- Challenge 9 -->
+
+<div class="challenge-9">
+	<div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+</div>
+
+<style>
+	.challenge-9 {
+		border-style: solid;
+        position: relative;
+	    border-width: 1px;
+        height: 100px;
+	}
+
+	.challenge-9 > div {
+		width: 70px;
+        height: 70px;
+        border-color: black;
+        border-radius: 50%;
+		border-style: solid;
+        border-width: 8px;
+        position: absolute;
+        left: 7px;
+        top: 7px;
+	}
+
+	.challenge-9 > div > div:nth-child(1) {
+		width: 50px;
+		height: 12px;
+		background-color: black;
+		position: absolute;
+		left: 10px;
+		top: 30px;
+	}
+
+	.challenge-9 > div > div:nth-child(2) {
+		width: 25px;
+		height: 10px;
+		background-color: black;
+		position: absolute;
+		left: 40px;
+		top: 22px;
+		transform: rotate(45deg);
+	}
+
+	.challenge-9 > div > div:nth-child(3) {
+		width: 25px;
+		height: 10px;
+		background-color: black;
+		position: absolute;
+		left: 40px;
+		top: 38px;
+		transform: rotate(135deg);
+	}
+
+</style>
+<!-- ------------------------------------------------------- -->
+
+
+</div>
+
+</body>
+</html>
